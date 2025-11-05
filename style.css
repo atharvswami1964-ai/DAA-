@@ -1,0 +1,84 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: #f4f6fa;
+  color: #222;
+  padding: 30px;
+  line-height: 1.6;
+}
+
+/* Main Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+/* Info Text */
+p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Experiment Card */
+.experiment {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.experiment:hover {
+  background: #e3f2fd;
+  transform: translateY(-2px);
+}
+
+/* Hidden Content Section */
+.content {
+  display: none;
+  background: #fff;
+  border-left: 5px solid #2196f3;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Link Styling */
+a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background: #2196f3;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+a:hover {
+  background: #0b7dda;
+}
+
+/* Code Output Box */
+pre {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  color: #333;
+}
