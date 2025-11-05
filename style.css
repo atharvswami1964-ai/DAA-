@@ -1,9 +1,9 @@
-/* General Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Body Styling */
@@ -14,7 +14,7 @@ body {
   line-height: 1.6;
 }
 
-/* Main Heading */
+/* Heading */
 h1 {
   text-align: center;
   margin-bottom: 20px;
