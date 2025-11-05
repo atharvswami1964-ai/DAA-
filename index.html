@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C++ Experiments Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>C++ Experiments Showcase</h1>
+  <p>Click on an experiment below to view details.</p>
+
+  <!-- Experiment 1 -->
+  <div class="experiment" onclick="toggle('exp1')">
+    <h2>Experiment 1: Binary Search on Student Records</h2>
+  </div>
+
+  <div id="exp1" class="content">
+    <p><strong>Aim:</strong> To perform binary search on student records using structures in C++.</p>
+    <a href="cpp/exp1.cpp" target="_blank">📄 View Code (exp1.cpp)</a>
+    <pre>
+Sample Output:
+Enter number of students: 3
+Enter student details (in ascending order of roll number):
+
+Student 1:
+Roll Number: 101
+Name: Atharv
+Marks: 89
+
+Student 2:
+Roll Number: 102
+Name: Rahul
+Marks: 75
+
+Student 3:
+Roll Number: 103
+Name: Meera
+Marks: 92
+
+Enter roll number to search: 102
+
+Student found:
+Roll No: 102
+Name: Rahul
+Marks: 75
+    </pre>
+  </div>
+
+  <!-- Template for future experiments -->
+  <!--
+  <div class="experiment" onclick="toggle('exp2')">
+    <h2>Experiment 2: (Title Here)</h2>
+  </div>
+  <div id="exp2" class="content">
+    <p><strong>Aim:</strong> (Write aim here)</p>
+    <a href="cpp/exp2.cpp" target="_blank">📄 View Code (exp2.cpp)</a>
+    <pre>
+Sample Output:
+(Add your program’s output here)
+    </pre>
+  </div>
+  -->
+
+  <script>
+    function toggle(id) {
+      const el = document.getElementById(id);
+      el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
