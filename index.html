@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>C++ Experiments Showcase</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>C++ Experiments Showcase</h1>
@@ -17,7 +17,28 @@
 
   <div id="exp1" class="content">
     <p><strong>Aim:</strong> To perform binary search on student records using structures in C++.</p>
+
+    <!-- Code Link -->
     <a href="cpp/exp1.cpp" target="_blank">📄 View Code (exp1.cpp)</a>
+
+    <!-- Optional Code Snippet Preview -->
+    <pre>
+int binarySearch(Student students[], int size, int targetRollNo) {
+    int left = 0, right = size - 1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (students[mid].rollNo == targetRollNo)
+            return mid;
+        else if (students[mid].rollNo < targetRollNo)
+            left = mid + 1;
+        else
+            right = mid - 1;
+    }
+    return -1;
+}
+    </pre>
+
+    <!-- Sample Output -->
     <pre>
 Sample Output:
 Enter number of students: 3
@@ -47,25 +68,10 @@ Marks: 75
     </pre>
   </div>
 
-  <!-- Template for future experiments -->
-  <!--
-  <div class="experiment" onclick="toggle('exp2')">
-    <h2>Experiment 2: (Title Here)</h2>
-  </div>
-  <div id="exp2" class="content">
-    <p><strong>Aim:</strong> (Write aim here)</p>
-    <a href="cpp/exp2.cpp" target="_blank">📄 View Code (exp2.cpp)</a>
-    <pre>
-Sample Output:
-(Add your program’s output here)
-    </pre>
-  </div>
-  -->
-
   <script>
     function toggle(id) {
       const el = document.getElementById(id);
-      el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+      el.style.display = el.style.display === "block" ? "none" : "block";
     }
   </script>
 </body>
